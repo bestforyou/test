@@ -1,0 +1,35 @@
+#系统级别的配置
+export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
+export CLICOLOR='Yes' #是否输出颜色
+export ls='ls -G'
+export  LSCOLORS='gxfxaxdxcxegedabagacad' #指定颜色
+export PS1="\e[33;1m\u@\H\e[31;1m:\w\e[36;1m >> \[\e[0m\]"
+#export PS1="\[\e]2;\u@\h:\w\a\]\[\e[36;1m\]\u@suse:\[\e[32;1m\]\w\[\e[36;1m\]> \[\e[0m\]" 
+
+#服务器
+alias 130='ssh -p 333 caida@10.1.1.130'
+alias 135='ssh -p 333 caida@10.1.1.135'
+alias 140='ssh -p 333 caida@119.254.76.140'
+alias 190='ssh -p 333 caida@114.113.225.190'
+alias 199='ssh -p 333 caida@119.254.76.199'
+alias 210='ssh -p 333 caida@119.254.76.210'
+alias 231='ssh -p 333 caida@119.254.76.231'
+alias 238='ssh -p 333 caida@119.254.76.238'
+alias 242='ssh -p 333 caida@119.254.76.242'
+alias 245='ssh -p 333 caida@119.254.76.245'
+alias docker='ssh -p333 caida@172.18.8.134'
+
+#其他一下常用
+alias e='vim'
+alias ei='vim ~/.vimrc'
+alias eg='cd ~/gitlab'
+alias eb='vim ~/.bash_profile'
+alias sb='source ~/.bash_profile'
+alias ll='ls -l'
+alias ..='cd ..'
+
+#rm 回收站
+alias rm='trash-put'
+alias rm-list='trash-list'
+alias rm-re='trash-restore'
+
